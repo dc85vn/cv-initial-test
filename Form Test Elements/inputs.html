@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Form Test Box</title>
+  </head>
+  <body>
+    <h1>FOR THE TEST ONLY</h1>
+    <form>
+      <fieldset>
+        <legend>Basic Information:</legend>
+          <label>Your name:</label>
+            <input type="text" placeholder="ex: ABC" maxlength="64"><br>
+          <label>Your email:</label>
+            <input type="email" placeholder="ex: ABC@example.com" maxlength="64"><br>
+          <label>Your password:</label>
+            <input type="password" name="" value="" placeholder="Please input your password!"><br>
+      </fieldset><br><br>
+      <fieldset>
+        <legend>Optional Information</legend>
+          <label>Your birthday:</label>
+            <input type="date" name="" value=""><br>
+          <label>Your favorite color:</label>
+            <input type="color" name="" value=""><br>
+          <label>Gender:</label><br>
+            <input type="radio" name="gender" value="male">
+          <label for="male">Male</label><br>
+            <input type="radio" name="gender" value="female">
+          <label for="female">Female</label><br>
+            <input type="radio" name="gender" value="undefined">
+          <label for="undefined">Undefined</label><br>
+          <label>Your avatar (optional):</label>
+            <input type="file" name="" value=""><br>
+          <label>Your phone number:</label>
+            <input type="text" name="" value="" placeholder="123-4567-8910" maxlength="15"><br>
+          <label>Your uploads/month:</label>
+            <input type="number" name="" value="" min="0" max="20" step="5"><br>
+          <label for="salary">Your wages:</label>
+          <select id="salary" name="salary">
+            <option value="<1,000$">under 1,000$</option>
+            <option value="1-5,000$" selected>between 1-5,000$</option>
+            <option value=">5,000$">more than 5,000$</option>
+          </select><br>
+          <label for="like">How do you think about me?</label>
+            <input list="like" name="like" value="">
+            <datalist id="like">
+              <option value="⭐⭐⭐⭐⭐"></option>
+              <option value="⭐⭐⭐⭐"></option>
+              <option value="⭐⭐⭐"></option>
+              <option value="⭐⭐"></option>
+              <option value="⭐"></option>
+            </datalist>
+      </fieldset><br><br>
+      <label for="your~message">We're looking forward to your voice:</label><br>
+      <textarea id="your~message"name="name" rows="10" cols="50"></textarea><br>
+        <input type="submit" name="" value="Submit">
+        <input type="reset" name="" value="Reset">
+        <button type="button" onclick="alert('Thank you for your supporting!💯')">Done!</button>
+    </form>
+  </body>
+</html>
